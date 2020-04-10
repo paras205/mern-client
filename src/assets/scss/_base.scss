@@ -1,0 +1,63 @@
+body {
+	font-family: $font-family;
+}
+.bg-gradient {
+	background: $main-gradient-bg;
+}
+.h-100 {
+	height: 100vh !important;
+}
+.mt-0 {
+	margin-top: 0px;
+}
+.mb-0 {
+	margin-bottom: 0px;
+}
+.pt-0 {
+	padding-top: 0px;
+}
+.pb-0 {
+	padding-bottom: 0px;
+}
+.item-center {
+	position: $pos-absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.pos-relative {
+	position: $pos-relative;
+}
+.pos-absolute {
+	position: $pos-absolute;
+}
+.box-item {
+	background: #ffffff;
+	padding: 15px;
+	width: $width;
+	border-radius: 4px;
+}
+.form-group {
+	label {
+		font-size: 13px;
+		color: #555555;
+	}
+}
+.form-control {
+	height: 40px;
+	font-size: 13px;
+	border-radius: 4px;
+}
+.btn {
+	text-transform: uppercase;
+	font-size: 14px;
+	padding: 12px 25px;
+}
+.text-danger {
+	font-size: 13px;
+}
+.error{
+	.form-control{
+		border-color: #dc3545;
+	}
+}
