@@ -56,8 +56,72 @@ body {
 .text-danger {
 	font-size: 13px;
 }
-.error{
-	.form-control{
+.error {
+	.form-control {
 		border-color: #dc3545;
+	}
+}
+.table-wrapper {
+	table {
+		width: 100%;
+		border-collapse: collapse;
+		background: #ffffff;
+		tr {
+			td,
+			th {
+				border: 1px solid #ddd;
+				padding: 10px 15px;
+				font-size: 13px;
+				font-weight: 600;
+				text-transform: uppercase;
+			}
+			td {
+				text-transform: capitalize;
+				font-weight: 500;
+				white-space: normal;
+				word-break: break-all;
+			}
+		}
+	}
+}
+.list-group {
+	li {
+		font-size: 13px;
+		text-transform: uppercase;
+	}
+}
+.admin-sidebar {
+	width: 200px;
+	position: fixed;
+	left: 20px;
+	top: 50px;
+}
+.content-wrapper {
+	margin-left: 230px;
+	background: #f9f9f9;
+	padding: 20px 25px;
+	min-height: 100vh;
+}
+.ql-toolbar.ql-snow,
+.ql-editor {
+	background: #ffffff;
+}
+.ql-editor {
+	height: 130px;
+}
+.image-wrapper {
+	img {
+		width: 100px;
+		height: 100px;
+		object-fit: contain;
+	}
+}
+.actions {
+	text-align: center;
+	svg {
+		height: 16px;
+		width: 16px;
+		margin: 0 5px;
+		cursor: pointer;
 	}
 }

@@ -1,6 +1,10 @@
 import { combineReducers } from 'redux';
-import auth from "./auth";
+import alert from './alert';
+import auth from './auth';
+import tours from './tour';
 
 export default combineReducers({
-    auth
+	alert,
+	auth,
+	tours
 });
