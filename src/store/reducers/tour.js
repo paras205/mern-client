@@ -1,8 +1,9 @@
-import { GET_ALL_TOURS, LOADING } from '../actions/tour';
+import { GET_ALL_TOURS, LOADING, GET_TOUR } from '../actions/tour';
 
 const initialState = {
 	loading: false,
-	tours: []
+	tours: [],
+	tour: {}
 };
 
 export default function(state = initialState, action) {
@@ -12,6 +13,12 @@ export default function(state = initialState, action) {
 				...state,
 				tours: action.payload,
 				loading: false
+			};
+		}
+		case GET_TOUR: {
+			return {
+				...state,
+				tour: action.payload
 			};
 		}
 		case LOADING: {

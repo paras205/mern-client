@@ -7,6 +7,8 @@ export const CREATE_TOUR_SUCCESS = 'CREATE_TOUR';
 export const CREATE_TOUR_ERROR = 'CREATE_TOUR_ERROR';
 export const GET_ALL_TOURS = 'GET_ALL_TOURS';
 export const GET_TOURS_ERROR = 'GET_TOURS_ERROR';
+export const GET_TOUR = 'GET_TOUR';
+export const GET_TOUR_ERROR = 'GET_TOUR_ERROR';
 
 export function createTour(data) {
 	return async (dispatch) => {
@@ -38,6 +40,18 @@ export function getAllTour() {
 			dispatch({ type: GET_ALL_TOURS, payload: res.data });
 		} catch (err) {
 			dispatch({ type: GET_TOURS_ERROR, payload: err });
+		}
+	};
+}
+
+export function getTour(id) {
+	return async (dispatch) => {
+		try {
+			dispatch({ type: LOADING });
+			const res = await axios.get(`${tour}/${id} `);
+			dispatch({ type: GET_TOUR, payload: res.data });
+		} catch (err) {
+			dispatch({ type: GET_TOUR_ERROR, payload: err });
 		}
 	};
 }

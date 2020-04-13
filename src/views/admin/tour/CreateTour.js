@@ -5,6 +5,7 @@ import { createTour } from '../../../store/actions/tour';
 import Input from '../../../components/Input';
 import Textarea from '../../../components/TextEditor';
 
+
 class CreateTour extends Component {
 	state = {
 		name: '',
@@ -105,6 +106,7 @@ class CreateTour extends Component {
 									label="Tour Description"
 								/>
 							</div>
+
 							<div className="form-group">
 								<button className="btn btn-primary btn-raised">Submit</button>
 							</div>

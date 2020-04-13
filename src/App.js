@@ -10,6 +10,7 @@ import Routes from './Routes';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/scss/index.scss';
+import './assets/scss/style.css';
 
 if (localStorage.token) {
 	setAuthorizationToken(localStorage.token);
@@ -18,13 +19,13 @@ if (localStorage.token) {
 
 function App() {
 	return (
-		<div className="wrapper">
+		<React.Fragment>
 			<Provider store={store}>
 				<BrowserRouter>
 					<Routes />
 				</BrowserRouter>
 			</Provider>
-		</div>
+		</React.Fragment>
 	);
 }
 

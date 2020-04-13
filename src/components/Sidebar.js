@@ -8,7 +8,7 @@ const Sidebar = () => {
 				<Link to="/admin/dashboard">dashboard</Link>
 			</li>
 			<li className="list-group-item">
-				<Link to="/admin/create/tour">Create Tour</Link>
+				<Link to="/admin/tour/create">Create Tour</Link>
 			</li>
 			<li className="list-group-item">
 				<Link to="/admin/tours"> All Tours</Link>
